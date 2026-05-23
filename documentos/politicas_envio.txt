@@ -1,0 +1,74 @@
+MANUAL DE POLÍTICAS DE ENVÍO — FastEnvios Ltda.
+Versión 3.2 | Actualizado: Enero 2025
+
+SECCIÓN 1: COBERTURA Y ZONAS DE DESPACHO
+
+FastEnvios Ltda. opera con cobertura nacional en todo el territorio chileno, incluyendo Región Metropolitana y regiones desde Arica y Parinacota hasta Magallanes.
+
+Zona 1 — Región Metropolitana (Santiago y Gran Santiago):
+- Plazo de entrega: 24 a 48 horas hábiles desde la confirmación del pedido.
+- Costo base: $2.990 CLP para paquetes hasta 5 kg.
+- Despacho mismo día disponible para pedidos ingresados antes de las 12:00 hrs (costo adicional de $1.500 CLP).
+
+Zona 2 — Regiones cercanas (V, VI, VII Región):
+- Plazo de entrega: 2 a 3 días hábiles.
+- Costo base: $4.490 CLP para paquetes hasta 5 kg.
+
+Zona 3 — Regiones norte y sur (I, II, III, IV, VIII, IX, X, XI, XII, XIV, XV Región):
+- Plazo de entrega: 3 a 5 días hábiles.
+- Costo base: $5.990 CLP para paquetes hasta 5 kg.
+- Zonas extremas (XI y XII Región): plazo puede extenderse hasta 7 días hábiles.
+
+SECCIÓN 2: RESTRICCIONES DE PESO Y DIMENSIONES
+
+Pesos máximos aceptados:
+- Paquete estándar: hasta 30 kg por bulto.
+- Paquetes entre 30 y 60 kg requieren coordinación especial y tienen un recargo del 40%.
+- No se aceptan envíos superiores a 60 kg por unidad.
+
+Dimensiones máximas por paquete:
+- Largo + ancho + alto no debe superar 200 cm en suma total.
+- Lado más largo no puede exceder 120 cm.
+
+Bultos que excedan estas dimensiones se consideran carga sobredimensionada y deben cotizarse de forma especial contactando al equipo comercial.
+
+SECCIÓN 3: TARIFAS ADICIONALES
+
+- Recargo por zona de difícil acceso (sectores rurales o sin pavimento): $2.000 CLP adicional.
+- Re-despacho por destinatario ausente (segundo intento): $1.500 CLP.
+- Tercer intento de entrega: el paquete retorna al remitente con costo de devolución de $3.000 CLP.
+- Embalaje reforzado (disponible para productos frágiles): $1.200 CLP adicional.
+
+SECCIÓN 4: SEGUIMIENTO DE PEDIDOS
+
+Todos los envíos incluyen número de seguimiento (tracking) que se envía automáticamente al correo del destinatario una vez que el paquete es retirado en origen.
+
+El estado del pedido puede consultarse en:
+- Sitio web: www.fastenvios.cl/seguimiento
+- WhatsApp corporativo: +56 9 8765 4321
+- Atención al cliente: lunes a viernes de 9:00 a 18:00 hrs.
+
+Estados del pedido:
+- EN_ORIGEN: el paquete fue recibido en bodega de FastEnvios.
+- EN_TRANSITO: el paquete está siendo transportado hacia destino.
+- EN_REPARTO: el paquete salió para entrega el mismo día.
+- ENTREGADO: entrega confirmada con firma del destinatario.
+- INTENTO_FALLIDO: no se encontró al destinatario; se programará nuevo intento.
+- DEVUELTO: el paquete retornó al remitente.
+
+SECCIÓN 5: CONDICIONES ESPECIALES DE ENVÍO
+
+Productos prohibidos para envío:
+- Sustancias peligrosas, inflamables o explosivas.
+- Dinero en efectivo o documentos de valor.
+- Animales vivos.
+- Productos perecibles sin embalaje especial certificado.
+- Artículos ilegales conforme a la legislación chilena.
+
+FastEnvios no se hace responsable por el contenido de los paquetes cuando el remitente declara información incorrecta o incompleta.
+
+SECCIÓN 6: TIEMPOS DE ENTREGA — CASOS ESPECIALES
+
+- Días festivos: los plazos de entrega se extienden automáticamente en 1 día hábil por cada festivo dentro del período de tránsito.
+- Condiciones climáticas adversas: FastEnvios puede suspender temporalmente el servicio en zonas afectadas por fenómenos climáticos graves, notificando a los clientes por correo electrónico.
+- Temporada alta (noviembre-diciembre): los plazos pueden extenderse en 1 a 2 días hábiles adicionales por alta demanda.

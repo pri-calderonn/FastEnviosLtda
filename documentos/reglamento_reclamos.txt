@@ -1,0 +1,86 @@
+REGLAMENTO DE RECLAMOS Y COMPENSACIONES — FastEnvios Ltda.
+Versión 2.1 | Actualizado: Enero 2025
+
+SECCIÓN 1: TIPOS DE RECLAMOS ACEPTADOS
+
+FastEnvios Ltda. acepta los siguientes tipos de reclamos formales:
+
+1.1 Paquete no entregado:
+Cuando el sistema marca el pedido como ENTREGADO pero el destinatario no lo recibió.
+
+1.2 Paquete dañado:
+Cuando el contenido llega con daños físicos atribuibles al transporte.
+
+1.3 Paquete extraviado:
+Cuando el paquete no registra movimiento en el sistema por más de 5 días hábiles.
+
+1.4 Entrega en dirección incorrecta:
+Cuando el paquete fue entregado en un domicilio distinto al indicado.
+
+1.5 Demora excesiva:
+Cuando el plazo de entrega supera en más de 3 días hábiles el tiempo prometido sin causa de fuerza mayor.
+
+SECCIÓN 2: PLAZOS PARA PRESENTAR RECLAMOS
+
+- Paquete no entregado o entrega incorrecta: hasta 5 días hábiles desde la fecha de entrega registrada en el sistema.
+- Paquete dañado: hasta 3 días hábiles desde la recepción del paquete. Requiere registro fotográfico del daño.
+- Paquete extraviado: se puede iniciar reclamo a partir del día 6 sin movimiento en el sistema.
+- Demora excesiva: se puede reclamar una vez superado el plazo máximo prometido más 3 días hábiles adicionales.
+
+Los reclamos presentados fuera de estos plazos no podrán ser procesados salvo casos excepcionales debidamente justificados.
+
+SECCIÓN 3: PROCEDIMIENTO PARA PRESENTAR UN RECLAMO
+
+Paso 1: Contactar al equipo de atención al cliente a través de:
+- WhatsApp: +56 9 8765 4321
+- Correo: reclamos@fastenvios.cl
+- Formulario web: www.fastenvios.cl/reclamos
+
+Paso 2: Proporcionar la siguiente información obligatoria:
+- Número de seguimiento (tracking) del envío.
+- RUT o nombre del remitente.
+- Descripción detallada del problema.
+- Fotografías del estado del paquete (obligatorio para reclamos por daño).
+
+Paso 3: Recibir número de caso. El equipo de FastEnvios entregará un número de caso dentro de las primeras 24 horas hábiles.
+
+Paso 4: Investigación interna. FastEnvios tiene un plazo de hasta 10 días hábiles para investigar el reclamo desde su recepción formal.
+
+Paso 5: Resolución. El cliente recibirá la resolución por correo electrónico con las medidas adoptadas.
+
+SECCIÓN 4: COMPENSACIONES
+
+4.1 Por paquete extraviado o no entregado:
+- Reembolso del 100% del costo del flete pagado.
+- Compensación adicional por el valor declarado del contenido, hasta un máximo de $150.000 CLP, siempre que el cliente haya contratado el seguro de envío.
+- Sin seguro contratado: compensación máxima de $30.000 CLP por concepto de valor del contenido.
+
+4.2 Por paquete dañado:
+- Reembolso parcial o total del costo del flete según la gravedad del daño, evaluado por el equipo de FastEnvios.
+- Compensación por daño al contenido hasta el valor declarado, con tope de $150.000 CLP con seguro contratado.
+- Sin seguro: FastEnvios no se hace responsable por daños al contenido; solo se reembolsa el flete.
+
+4.3 Por demora excesiva:
+- Reembolso del 50% del costo del flete si la demora supera 3 días hábiles del plazo prometido.
+- Reembolso del 100% del flete si la demora supera 5 días hábiles adicionales al plazo prometido.
+
+4.4 Por entrega en dirección incorrecta:
+- Reenvío sin costo al domicilio correcto.
+- Si el paquete no puede recuperarse: mismas condiciones que paquete extraviado.
+
+SECCIÓN 5: SEGURO DE ENVÍO
+
+FastEnvios ofrece un seguro opcional para todos los envíos:
+- Costo: 1,5% del valor declarado del contenido (mínimo $500 CLP).
+- Cobertura: hasta $1.000.000 CLP por envío.
+- El seguro debe contratarse al momento de generar el envío; no se acepta contratación posterior.
+- Para activar el seguro, el cliente debe declarar el valor del contenido con veracidad al momento del despacho.
+
+SECCIÓN 6: CASOS EXCLUIDOS DE COMPENSACIÓN
+
+FastEnvios no otorgará compensación en los siguientes casos:
+- Fuerza mayor: terremotos, inundaciones, cortes de ruta u otros eventos fuera del control de la empresa.
+- Declaración incorrecta del contenido por parte del remitente.
+- Embalaje inadecuado proporcionado por el cliente.
+- Productos prohibidos enviados en contravención a la política de envíos.
+- Reclamos presentados fuera de los plazos establecidos.

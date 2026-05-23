@@ -1,0 +1,73 @@
+PREGUNTAS FRECUENTES — FastEnvios Ltda.
+Versión 1.4 | Actualizado: Enero 2025
+
+CATEGORÍA 1: POLÍTICAS Y TIEMPOS DE ENVÍO
+
+P: ¿Cuánto demora un envío a Santiago?
+R: Los envíos dentro de la Región Metropolitana tienen un plazo de 24 a 48 horas hábiles desde la confirmación del pedido. Si el pedido se ingresa antes de las 12:00 hrs, existe la opción de despacho el mismo día con un costo adicional de $1.500 CLP. [Manual de Políticas de Envío, sección 1]
+
+P: ¿Hacen envíos a regiones extremas como Punta Arenas o Aysén?
+R: Sí, FastEnvios tiene cobertura en todo Chile, incluidas las regiones XI y XII. El plazo de entrega para estas zonas puede extenderse hasta 7 días hábiles. El costo base para esas regiones es de $5.990 CLP para paquetes hasta 5 kg. [Manual de Políticas de Envío, sección 1]
+
+P: ¿Cuál es el peso máximo que aceptan por paquete?
+R: Aceptamos paquetes de hasta 30 kg por bulto. Para paquetes entre 30 y 60 kg se requiere coordinación especial y tiene un recargo del 40% sobre la tarifa base. No aceptamos envíos superiores a 60 kg por unidad. [Manual de Políticas de Envío, sección 2]
+
+P: ¿Qué pasa si mi paquete tiene dimensiones grandes?
+R: La suma de largo + ancho + alto no puede superar 200 cm, y el lado más largo no puede exceder 120 cm. Si el paquete supera estas medidas se considera carga sobredimensionada y debe cotizarse de forma especial contactando al equipo comercial. [Manual de Políticas de Envío, sección 2]
+
+P: ¿Tienen algún recargo si el domicilio es difícil de acceder?
+R: Sí. Los despachos a sectores rurales o sin pavimento tienen un recargo adicional de $2.000 CLP sobre la tarifa base. [Manual de Políticas de Envío, sección 3]
+
+P: ¿Qué pasa si no estoy en casa cuando llega el repartidor?
+R: El repartidor realizará un segundo intento de entrega con un costo adicional de $1.500 CLP. Si en el tercer intento tampoco hay nadie, el paquete retorna al remitente con un costo de devolución de $3.000 CLP. [Manual de Políticas de Envío, sección 3]
+
+P: ¿Los tiempos de entrega cambian en días festivos?
+R: Sí. Los plazos se extienden automáticamente en 1 día hábil por cada festivo que caiga dentro del período de tránsito del envío. [Manual de Políticas de Envío, sección 6]
+
+P: ¿En temporada de Navidad los plazos cambian?
+R: Durante los meses de noviembre y diciembre, por alta demanda, los plazos pueden extenderse entre 1 y 2 días hábiles adicionales a los plazos normales. [Manual de Políticas de Envío, sección 6]
+
+CATEGORÍA 2: SEGUIMIENTO DE PEDIDOS
+
+P: ¿Cómo puedo saber dónde está mi paquete?
+R: Puedes hacer seguimiento de tu envío ingresando el número de tracking en nuestro sitio web www.fastenvios.cl/seguimiento, enviando un mensaje a nuestro WhatsApp corporativo +56 9 8765 4321, o contactando a atención al cliente de lunes a viernes entre las 9:00 y 18:00 hrs. [Manual de Políticas de Envío, sección 4]
+
+P: ¿Qué significa el estado "EN_REPARTO"?
+R: El estado EN_REPARTO significa que el paquete ya salió de la bodega y está en ruta para ser entregado durante el día. Se espera que llegue antes del cierre de operaciones de ese día. [Manual de Políticas de Envío, sección 4]
+
+P: ¿Qué significa el estado "INTENTO_FALLIDO"?
+R: Significa que el repartidor intentó entregar el paquete pero no encontró al destinatario en el domicilio. Se programará un nuevo intento de entrega. Puedes contactarnos para coordinar el horario más conveniente. [Manual de Políticas de Envío, sección 4]
+
+P: ¿Cuándo recibiré el número de seguimiento?
+R: El número de tracking se envía automáticamente al correo del destinatario una vez que el paquete es retirado en origen por FastEnvios. [Manual de Políticas de Envío, sección 4]
+
+CATEGORÍA 3: RECLAMOS Y COMPENSACIONES
+
+P: Mi paquete aparece como entregado pero no lo recibí. ¿Qué hago?
+R: Debes presentar un reclamo formal dentro de los 5 días hábiles siguientes a la fecha de entrega registrada. Puedes hacerlo por WhatsApp al +56 9 8765 4321, por correo a reclamos@fastenvios.cl o mediante el formulario en www.fastenvios.cl/reclamos. Necesitarás tu número de tracking y RUT o nombre del remitente. [Reglamento de Reclamos, secciones 1 y 3]
+
+P: Mi paquete llegó dañado. ¿Qué debo hacer?
+R: Tienes hasta 3 días hábiles desde la recepción para presentar el reclamo por daño. Es obligatorio adjuntar fotografías del estado del paquete al momento de presentar el reclamo. Contáctanos por WhatsApp, correo o formulario web. [Reglamento de Reclamos, secciones 1 y 3]
+
+P: ¿Cuánto tiempo demoran en resolver un reclamo?
+R: Una vez recibido el reclamo formal, FastEnvios tiene hasta 10 días hábiles para investigar y entregar una resolución por correo electrónico. Dentro de las primeras 24 horas recibirás un número de caso de seguimiento. [Reglamento de Reclamos, sección 3]
+
+P: ¿Cuánto me compensan si se extravió mi paquete?
+R: Si contrataste el seguro de envío, la compensación cubre el 100% del flete más el valor declarado del contenido hasta $150.000 CLP. Sin seguro, la compensación máxima por el contenido es de $30.000 CLP más el reembolso del flete. [Reglamento de Reclamos, sección 4]
+
+P: ¿Vale la pena contratar el seguro de envío?
+R: El seguro cuesta un 1,5% del valor declarado del contenido (con un mínimo de $500 CLP) y cubre hasta $1.000.000 CLP. Es especialmente recomendable para envíos de productos de valor. Debe contratarse al momento de generar el envío. [Reglamento de Reclamos, sección 5]
+
+P: Me demoraron más de lo prometido. ¿Me devuelven el dinero?
+R: Sí. Si la demora supera en más de 3 días hábiles el plazo prometido, se reembolsa el 50% del flete. Si la demora supera 5 días hábiles adicionales, el reembolso es del 100% del flete pagado. [Reglamento de Reclamos, sección 4]
+
+P: ¿Qué no cubre el seguro o las compensaciones?
+R: No hay compensación en casos de fuerza mayor (terremotos, inundaciones), declaración incorrecta del contenido por el remitente, embalaje inadecuado del cliente, productos prohibidos o reclamos presentados fuera de los plazos establecidos. [Reglamento de Reclamos, sección 6]
+
+CATEGORÍA 4: INFORMACIÓN GENERAL
+
+P: ¿Qué productos no pueden enviarse?
+R: FastEnvios no acepta sustancias peligrosas, inflamables o explosivas, dinero en efectivo, documentos de valor, animales vivos, productos perecibles sin embalaje certificado ni artículos ilegales según la legislación chilena. [Manual de Políticas de Envío, sección 5]
+
+P: ¿Cuál es el horario de atención al cliente?
+R: Nuestro equipo de atención al cliente está disponible de lunes a viernes de 9:00 a 18:00 horas. También puedes escribirnos por WhatsApp al +56 9 8765 4321 fuera de ese horario y te responderemos al día siguiente hábil.
