@@ -6,3 +6,5 @@ __pycache__/
 
 chroma_historial/
 reclamos_registrados.json
+
+venv/
