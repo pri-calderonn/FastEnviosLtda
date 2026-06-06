@@ -17,17 +17,17 @@ Versiones requeridas (ver requirements.txt):
 Arquitectura del agente:
     Usuario
        │
-       ▼
-  [Nodo: clasificador]  ← detecta intención + recupera memoria largo plazo
+       
+  [Nodo: clasificador]  - detecta intención + recupera memoria largo plazo
        │
-       ▼
-  [Nodo: agente]        ← LLM GPT-4.1 con herramientas enlazadas
+       
+  [Nodo: agente]        - LLM GPT-4.1 con herramientas enlazadas
        │
-       ├─── ¿usa herramienta? ──► [Nodo: herramientas] ──► vuelve al agente
+       ├─── ¿usa herramienta? - [Nodo: herramientas] - vuelve al agente
        │
-       └─── ¿respuesta final? ──► [Nodo: guardar] ──► END
+       └─── ¿respuesta final? - [Nodo: guardar] - END
                                        │
-                                       ▼
+                                       
                                   ChromaDB historial
                                   (memoria largo plazo)
 """
@@ -60,9 +60,6 @@ from langchain_community.document_loaders import DirectoryLoader, TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# 1. CONFIGURACIÓN Y CREDENCIALES
-# ══════════════════════════════════════════════════════════════════════════════
 
 GITHUB_TOKEN   = os.getenv("GITHUB_TOKEN")
 BASE_URL       = os.getenv("OPENAI_BASE_URL")
@@ -76,20 +73,12 @@ if not GITHUB_TOKEN:
     sys.exit(1)
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# 2. EMBEDDINGS (compartidos por RAG y por historial)
-# ══════════════════════════════════════════════════════════════════════════════
-
 embeddings = OpenAIEmbeddings(
     model="text-embedding-3-small",
     api_key=GITHUB_TOKEN,
     base_url=EMBEDDINGS_URL
 )
 
-
-# ══════════════════════════════════════════════════════════════════════════════
-# 3. MEMORIA LARGO PLAZO — ChromaDB base de conocimiento interna
-# ══════════════════════════════════════════════════════════════════════════════
 
 print("Cargando base de conocimiento...")
 
@@ -119,11 +108,6 @@ else:
 
 retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
 
-
-# ══════════════════════════════════════════════════════════════════════════════
-# 4. MEMORIA LARGO PLAZO — ChromaDB historial de conversaciones
-#    Persiste mensajes entre sesiones y los recupera por similitud semántica
-# ══════════════════════════════════════════════════════════════════════════════
 
 historial_store = Chroma(
     persist_directory=HISTORIAL_DIR,
@@ -159,7 +143,7 @@ def recuperar_contexto_historico(session_id: str, consulta: str, k: int = 3) -> 
         )
         if not resultados:
             return ""
-        # Filtrar por score de distancia (menor = más similar)
+        #filtrar
         relevantes = [
             f"[{doc.metadata['rol']}]: {doc.page_content}"
             for doc, score in resultados
@@ -170,17 +154,12 @@ def recuperar_contexto_historico(session_id: str, consulta: str, k: int = 3) -> 
         return ""
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# 5. HERRAMIENTAS DEL AGENTE (IE1)
-#    El LLM decide autónomamente cuál usar según la consulta
-# ══════════════════════════════════════════════════════════════════════════════
-
 @tool
 def consultar_documentos(pregunta: str) -> str:
     """
     Consulta la base de conocimiento interna de FastEnvios.
-    Úsala para responder preguntas sobre políticas de envío, tarifas,
-    plazos de entrega, seguimiento de pedidos y preguntas frecuentes.
+    Usala para responder preguntas sobre políticas de envío, tarifas,
+    plazos de entrega,seguimiento de pedidos y preguntas frecuentes.
     Siempre cita la fuente documental en tu respuesta.
     """
     docs = retriever.invoke(pregunta)
@@ -251,9 +230,8 @@ def escalar_a_ejecutivo(motivo: str) -> str:
 HERRAMIENTAS = [consultar_documentos, registrar_reclamo, escalar_a_ejecutivo]
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# 6. MODELO LLM CON HERRAMIENTAS ENLAZADAS (IE2 — framework LangGraph + OpenAI)
-# ══════════════════════════════════════════════════════════════════════════════
+
+#MODELO LLM
 
 llm = ChatOpenAI(
     model="gpt-4.1",
@@ -277,19 +255,10 @@ REGLAS OBLIGATORIAS:
 - NUNCA inventes datos que no provengan de las herramientas o documentos."""
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# 7. ESTADO DEL AGENTE
-# ══════════════════════════════════════════════════════════════════════════════
-
 class EstadoAgente(TypedDict):
     messages:   Annotated[list, add_messages]
     session_id: str
     intencion:  str
-
-
-# ══════════════════════════════════════════════════════════════════════════════
-# 8. NODOS DEL GRAFO
-# ══════════════════════════════════════════════════════════════════════════════
 
 def nodo_clasificador(estado: EstadoAgente) -> dict:
     """
@@ -302,7 +271,6 @@ def nodo_clasificador(estado: EstadoAgente) -> dict:
     ultimo_mensaje = estado["messages"][-1].content
     session_id     = estado.get("session_id", "default")
 
-    # ── Clasificación de intención ──────────────────────────────────────────
     consulta_lower = ultimo_mensaje.lower()
     if any(p in consulta_lower for p in
            ["seguimiento", "dónde está", "donde esta", "mi pedido", "tracking", "llegó", "llego"]):
@@ -321,10 +289,8 @@ def nodo_clasificador(estado: EstadoAgente) -> dict:
 
     print(f"   [Intención detectada: {intencion}]")
 
-    # ── Recuperar contexto histórico (memoria largo plazo) ──────────────────
     contexto_historico = recuperar_contexto_historico(session_id, ultimo_mensaje)
 
-    # ── Construir system prompt enriquecido ─────────────────────────────────
     system_content = SYSTEM_PROMPT
     if contexto_historico:
         system_content += (
@@ -332,10 +298,8 @@ def nodo_clasificador(estado: EstadoAgente) -> dict:
             f"{contexto_historico}"
         )
 
-    # ── Persistir mensaje del usuario en historial ──────────────────────────
     guardar_en_historial(session_id, "usuario", ultimo_mensaje)
 
-    # ── Insertar SystemMessage solo al inicio de la conversación ────────────
     mensajes = list(estado["messages"])
     if not any(isinstance(m, SystemMessage) for m in mensajes):
         mensajes = [SystemMessage(content=system_content)] + mensajes
@@ -370,10 +334,6 @@ def nodo_guardar_respuesta(estado: EstadoAgente) -> dict:
     return {}
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# 9. FUNCIÓN DE ENRUTAMIENTO CONDICIONAL (IE5 — planificación adaptativa)
-# ══════════════════════════════════════════════════════════════════════════════
-
 def debe_usar_herramienta(estado: EstadoAgente) -> str:
     """
     Decide el siguiente nodo según si el LLM solicitó una herramienta.
@@ -386,21 +346,15 @@ def debe_usar_herramienta(estado: EstadoAgente) -> str:
     return "guardar"
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# 10. CONSTRUCCIÓN DEL GRAFO (IE2 — LangGraph StateGraph)
-# ══════════════════════════════════════════════════════════════════════════════
-
 nodo_herramientas = ToolNode(HERRAMIENTAS)
 
 grafo = StateGraph(EstadoAgente)
 
-# Registrar nodos
 grafo.add_node("clasificador", nodo_clasificador)
 grafo.add_node("agente",       nodo_agente)
 grafo.add_node("herramientas", nodo_herramientas)
 grafo.add_node("guardar",      nodo_guardar_respuesta)
 
-# Definir flujo
 grafo.set_entry_point("clasificador")
 grafo.add_edge("clasificador", "agente")
 
@@ -413,18 +367,13 @@ grafo.add_conditional_edges(
     }
 )
 
-# Loop: herramienta → agente (permite múltiples llamadas a herramientas)
 grafo.add_edge("herramientas", "agente")
 grafo.add_edge("guardar", END)
 
-# Memoria corto plazo: MemorySaver mantiene el hilo completo de la sesión (IE3)
 memoria_corto_plazo = MemorySaver()
 agente_compilado = grafo.compile(checkpointer=memoria_corto_plazo)
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# 11. FUNCIÓN DE INVOCACIÓN
-# ══════════════════════════════════════════════════════════════════════════════
 
 def ejecutar_agente(consulta: str, session_id: str) -> str:
     """Invoca el agente con la consulta del usuario y retorna la respuesta."""
@@ -436,16 +385,12 @@ def ejecutar_agente(consulta: str, session_id: str) -> str:
     }
     resultado = agente_compilado.invoke(estado_inicial, config=config)
 
-    # Buscar el último AIMessage con contenido de texto válido
     for msg in reversed(resultado["messages"]):
         if isinstance(msg, AIMessage) and isinstance(msg.content, str) and msg.content.strip():
             return msg.content
     return "No se pudo generar una respuesta. Intenta nuevamente."
 
 
-# ══════════════════════════════════════════════════════════════════════════════
-# 12. INTERFAZ DE CONVERSACIÓN EN TERMINAL
-# ══════════════════════════════════════════════════════════════════════════════
 
 def main():
     print("\n" + "=" * 60)
