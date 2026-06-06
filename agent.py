@@ -337,8 +337,8 @@ def nodo_guardar_respuesta(estado: EstadoAgente) -> dict:
 def debe_usar_herramienta(estado: EstadoAgente) -> str:
     """
     Decide el siguiente nodo según si el LLM solicitó una herramienta.
-    Si hay tool_calls pendientes → ejecutar herramientas y volver al agente.
-    Si no hay tool_calls         → persistir respuesta y terminar.
+    Si hay tool_calls pendientes  ejecutar herramientas y volver al agente.
+    Si no hay tool_calls    persistir respuesta y terminar.
     """
     ultimo = estado["messages"][-1]
     if hasattr(ultimo, "tool_calls") and ultimo.tool_calls:
@@ -437,3 +437,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+
+
