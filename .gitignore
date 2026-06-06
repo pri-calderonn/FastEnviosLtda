@@ -3,3 +3,6 @@ chroma_db/
 venv/
 __pycache__/
 *.pyc
+
+chroma_historial/
+reclamos_registrados.json
